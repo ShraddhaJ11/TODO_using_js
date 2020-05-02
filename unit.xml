@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.323" tests="5" failures="5">
+  <testsuite name="Root Suite" timestamp="2020-04-11T12:16:53" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="list view test" timestamp="2020-04-11T12:16:53" tests="5" file="/projects/challenge/test/test.js" failures="5" time="1.323">
+    <testcase name="list view test Clicking on Insert button should show alert message &quot;Please provide the valid input&quot; for the invalid or empty input" time="0.167" classname="Clicking on Insert button should show alert message &quot;Please provide the valid input&quot; for the invalid or empty input">
+      <failure message="no such alert
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 4.15.0-1044-gke x86_64)" type="NoSuchAlertError"><![CDATA[NoSuchAlertError: no such alert
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 4.15.0-1044-gke x86_64)
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (node_modules/selenium-webdriver/lib/http.js:441:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: WebDriver.switchTo().alert()
+    at thenableWebDriverProxy.schedule (node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at TargetLocator.alert (node_modules/selenium-webdriver/lib/webdriver.js:1862:29)
+    at Context.<anonymous> (test/test.js:62:49)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="list view test Clicking on Insert button should add the valid input to the list" time="0.182" classname="Clicking on Insert button should add the valid input to the list">
+      <failure message="expected 0 to equal 1" type="AssertionError"><![CDATA[AssertionError: expected 0 to equal 1
+    at Context.<anonymous> (test/test.js:96:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="list view test After inserting the value successfully should reset the input" time="0.155" classname="After inserting the value successfully should reset the input">
+      <failure message="expected 0 to equal 1" type="AssertionError"><![CDATA[AssertionError: expected 0 to equal 1
+    at Context.<anonymous> (test/test.js:114:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="list view test Font color for every third elements (3, 6 and 9 etc) in the list should be red color" time="0.416" classname="Font color for every third elements (3, 6 and 9 etc) in the list should be red color">
+      <failure message="Cannot read property &apos;getCssValue&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'getCssValue' of undefined
+    at Context.<anonymous> (test/test.js:143:35)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+    <testcase name="list view test Font color for other than every third elements (3, 6 and 9 etc) in the list should be black color" time="0.403" classname="Font color for other than every third elements (3, 6 and 9 etc) in the list should be black color">
+      <failure message="Cannot read property &apos;getCssValue&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'getCssValue' of undefined
+    at Context.<anonymous> (test/test.js:175:35)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
